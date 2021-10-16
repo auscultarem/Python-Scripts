@@ -3,7 +3,7 @@ import datetime as dt
 import random
 
 MY_EMAIL = "auscultarem@gmail.com"
-MY_PASSWORD = "12345"
+MY_PASSWORD = "12345" 
 
 now = dt.datetime.now()
 weekday = now.weekday()
@@ -22,17 +22,6 @@ if weekday == 3:
                                 to_addrs=MY_EMAIL,
                                 msg=f"Subject:Day Motivation\n\n{quote}"
                                 )
-
-
-
-
-
-
-
-
-
-
-
 # import smtplib
 #
 # my_email = "auscultarem@gmail.com"

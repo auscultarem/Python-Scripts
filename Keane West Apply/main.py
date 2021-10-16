@@ -6,12 +6,10 @@ url ="https://api.kanye.rest"
 
 def get_quote():
     response = requests.get(url=url)
+    response.raise_for_status() # if we don't get 200 everything is ok
     data = response.json()
-    canvas.itemconfig(quote_text, text=f"{data['quote']}")
-
-
-
-
+    quote = data['quote']
+    canvas.itemconfig(quote_text, text=quote)
 
 window = Tk()
 window.title("Kanye Says...")
