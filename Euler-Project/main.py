@@ -13,3 +13,10 @@ print( euler.multiple3_or_5(1000) )
 # By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 print(euler.fibonacci( 50 ))
 print(euler.sum_even_fibonacci())
+
+# The prime factors of 13195 are 5, 7, 13 and 29.
+
+# What is the largest prime factor of the number 600851475143 ?
+primes_list = euler.the_prime_numbers(10000)
+# euler.the_largest_prime_factor(13195, primes_list)
+euler.the_largest_prime_factor(600851475143, primes_list) #the answer is [71,839,1471,6857]
