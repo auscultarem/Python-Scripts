@@ -80,3 +80,24 @@ class Euler:
 				prime_factor.append(x)
 
 		print(prime_factor)
+	
+	def palindrome_3_digit(self):
+		limit_number = 1000
+		numberlist = []
+		for number1 in range (1, limit_number):
+			for number2 in range(1, limit_number):				
+				product = number1 * number2 
+				product = str(product)
+				test = product
+				invert = test[::-1]
+				if invert == test:
+					product = int(product)
+					numberlist.append(product)
+				else:
+					pass
+		
+		max_number = max(numberlist)
+		print(max_number)
+		
+
+		

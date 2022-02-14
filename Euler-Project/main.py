@@ -18,5 +18,10 @@ print(euler.sum_even_fibonacci())
 
 # What is the largest prime factor of the number 600851475143 ?
 primes_list = euler.the_prime_numbers(10000)
-# euler.the_largest_prime_factor(13195, primes_list)
-euler.the_largest_prime_factor(600851475143, primes_list) #the answer is [71,839,1471,6857]
+euler.the_largest_prime_factor(13195, primes_list)
+euler.the_largest_prime_factor(600851475143, primes_list)
+
+# A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+
+# Find the largest palindrome made from the product of two 3-digit numbers.
+euler.palindrome_3_digit()
